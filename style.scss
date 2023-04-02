@@ -6,20 +6,21 @@
 .container {
   display: grid;
   padding: 10px;
-  width: 100vw;
 }
 @media (max-width: 400px) {
   .container {
-    height: 100vh;
-    background-image: url(images/pattern-background-mobile.svg);
+    min-height: 100vh;
+    background: url(images/pattern-background-mobile.svg), #e1e9ff;
+    background-repeat: no-repeat no-repeat;
     background-size: 100% 100%;
   }
 }
 
 @media (min-width: 401px) {
   .container {
-    height: 100vh;
-    background-image: url(images/pattern-background-desktop.svg);
+    min-height: 100vh;
+    background: url(images/pattern-background-desktop.svg), #e1e9ff;
+    background-repeat: no-repeat no-repeat;
     background-size: 100% 100%;
   }
 }
